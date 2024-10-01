@@ -1,0 +1,40 @@
+/* pagination.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  border: none;
+  background-color: #ffffff;
+  color: #111112;
+  padding: 5px 19px;
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.2s;
+  font-family: 'ONE-Mobile-POP';
+  transition: transform 0.3s ease; 
+}
+
+.pagination-button:hover {
+  transform: scale(1.13); 
+
+}
+
+.pagination-button.active {
+  
+  font-weight: bold;
+  color:  #73E952;
+  
+}
+
+.pagination-button[aria-label='Previous'] {
+font-size: 20px; /* Increase the size of the arrow button */
+}
+
+.pagination-button[aria-label='Next'] {
+font-size: 20px; /* Increase the size of the arrow button */
+}

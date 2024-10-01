@@ -1,0 +1,249 @@
+/*제목 테두리*/
+.input-border-box {
+  position: absolute;
+  left: 94px;
+  top: 20px;
+  width: 726px;
+  height: 55px;
+  /* border: solid; 테두리 확인용*/
+}
+
+/* 제목 입력 */
+.title-input {
+  position: absolute;
+  transform: translateY(-50%);
+  left: -50px;
+  top: 50%;
+  width: 800px;
+  font-size: 23px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  background-color: transparent;
+  outline: none;
+  font-family: 'ONE-Mobile-POP';
+}
+
+/*날짜 입력*/
+.date-input {
+  width: 220px;
+  height: 40px;
+  font-size: 23px;
+  padding: 5px 16px;
+  border-radius: 15px;
+
+  font-family: 'ONE-Mobile-POP';
+  
+}
+
+
+/* 둘째 줄*/
+.second-container {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: space-between; 
+  position: absolute;
+  top: 87px; 
+  left: 80px;
+  right: 80px; 
+  padding: 0 0px; /* 좌우 패딩 */
+}
+
+
+/*셋째 줄*/
+.third-container {
+  position: absolute;
+
+  top: 134px;
+  width: 802px;
+  height: 430px;
+
+  left: 50%; /* 중앙 */
+  transform: translateX(-50%); /* 중앙 */
+   
+  /* border: solid;  */
+}
+
+
+/*파일업로드 버튼*/
+
+.file-button {
+  position: absolute;
+  left: 310px;
+  top: 2px;
+
+  padding-left: 2px;
+
+  bottom: 2px;
+  width: 32px;
+  height: 30px;
+  background-color: #fff;
+  /* border: 2px solid rgb(224, 222, 222); */
+  border-radius: 4px;
+  box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.1);
+  
+  
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.4s ease; 
+}
+
+.file-button:hover {
+  transform: scale(1.08); 
+}
+
+
+/*왼쪽: 사진 전체 테두리*/
+.left-container {
+  position: absolute;
+  left: 21px;
+  top: 41px;
+  width: 333px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: start;
+
+  padding: 2px;
+  overflow: hidden;
+  border-radius: 5px;  
+  /* border: 2px solid rgb(223, 221, 221);   */
+}
+
+/*사진 영역 */
+.file-photo-container {
+  position: relative;
+  width: 323px;
+  height: 390px;
+
+  border-radius: 5px;  
+  
+  border: 2px solid rgb(199, 199, 199);  
+  overflow: hidden; /*사진 넘치면 숨기기*/
+}
+
+/* 이미지 미리보기*/
+.file-photo-container img {
+  width: 323px;   
+  height: 100%; 
+  object-fit: contain; /*비율 유지*/
+
+}
+
+
+.caption-area {
+  position: relative;
+
+  
+  
+  width: 330px;
+  height: 33px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+
+  font-family: 'ONE-Mobile-POP';
+  /* border: 2px solid pink;  */
+}
+
+
+.register-button {
+  padding: 5px;  
+  background-color: #f4f5f7;  
+  color: #333; 
+  
+  border-radius: 5px;  
+  font-size: 17px;  
+  cursor: pointer;  
+  transition: all 0.2s ease;  
+  font-family: 'ONE-Mobile-POP';
+}
+
+.register-button:hover {
+  background-color: #f0f0f0; /* 마우스 오버 시 배경색 변경 */
+  
+}
+
+
+
+/* 오른쪽 */
+.preview-box {
+    position: absolute;
+    
+    top: 134px;
+    width: 430px;
+    height: 410px;
+
+    border: 3px solid #d1d5db; 
+    border-radius: 0.375rem; 
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-left: 423px;
+
+    padding: 20px;
+  }
+  
+
+
+
+/* 사진 한 개*/
+.photo-card {
+  width: 330px;
+  height: auto;
+  margin-bottom: 2rem; 
+  margin-right: 1rem;
+  margin-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  /* border: 2px solid pink */
+  
+}
+  
+
+  
+.photo-card-img {
+  width: 100%;
+  height: 270px;
+  margin-top: 9px;
+  
+  border: 2px solid rgb(203, 202, 202);
+
+  object-fit: contain; /*비율 유지*/
+}
+
+.photo-card p {
+  position: relative;
+ 
+  width: 330px;
+  height: 33px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+
+  font-family: 'ONE-Mobile-POP';
+
+}
+
+
+
+
+.delete-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 297px;
+}
+

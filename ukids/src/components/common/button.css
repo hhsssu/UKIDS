@@ -1,0 +1,83 @@
+@import url(@/reset.css);
+
+.common-btn {
+  display: flex;
+  /* width: auto; 수정. 글자크기에 맞게 변하도록 */
+  width: auto;
+  padding: 5px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5rem;
+  opacity: var(--sds-size-stroke-border);
+  box-shadow: 0px 0px 7px 0px rgba(153, 153, 153, 0.25);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login-btn {
+  width: 100% !important;
+  padding: 13px 0;
+  border-radius: 10px !important;
+  font-size: 25px;
+  margin: 0 auto;
+}
+
+.big-btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.5rem;
+}
+
+/* 긍정(등록, 편지쓰기, 보내기, 답장하기, 완료 등) */
+.blue-btn {
+  background: #36d5f1;
+}
+
+/* 수정, 돌아가기 버튼 */
+/* 로그아웃, 설정 버튼은 박스모양 변경 필요 */
+.gray-btn {
+  background: #777;
+}
+
+.setting {
+  padding: 8px;
+}
+
+/* 목록 버튼 */
+.list-btn {
+  background: #fff;
+  color: #777;
+  padding: 5px 14px;
+}
+
+.white-btn {
+  background: #fff;
+  color: #777;
+}
+
+/* 부정(해체, 연결끊기 등) 관련 버튼 */
+.red-btn {
+  background: #f56457;
+}
+
+/* 부정(삭제) 폰트 색상 */
+.red-font {
+  color: #f56457;
+}
+
+
+/* 통화 연결하기 버튼 */
+.green-btn {
+  background: #2cda0f;
+}
+
+/* 플러스 버튼 */
+.plus-btn {
+  color: #36d5f1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 30px;
+}

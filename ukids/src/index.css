@@ -1,0 +1,264 @@
+/* index.css */
+@import url(./reset.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 246, 252, 255;
+  /* --background-end-rgb: 0, 0, 255; */
+}
+
+/* 다크모드 비활성화 */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  background: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgb(var(--background-end-rgb)) 35%
+    )
+    rgb(var(--background-start-rgb));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1rem 11rem;
+  max-height: 100%;
+  /* overflow: hidden; */
+  min-width: 1440px;
+  width: 100%;
+
+  /* 드래그 방지 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 드래그 허용 */
+.draggable {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* 기능 박스 수정*/
+.feature-box {
+  width: 911px;
+  /* width: 90%; */
+  height: 576px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.25);
+}
+
+/* 기능 박스 (반) */
+.half-feature-box {
+  width: 440px;
+  /* width: 43%; */
+  height: 576px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.25);
+  /* padding: 30px 15px; */
+}
+
+/* 기능박스 (사이즈, padding값 빠진 것!) */
+.common-feature-box {
+  flex-shrink: 0;
+  border-radius: 30px;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 3px 7px 0px rgba(153, 153, 153, 0.25);
+}
+
+@layer base {
+  /* 전체 */
+  /*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-display: swap;
+    src: local('Pretendard Black'),
+      url(./fonts/woff2/Pretendard-Black.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Black.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-display: swap;
+    src: local('Pretendard ExtraBold'),
+      url(./fonts/woff2/Pretendard-ExtraBold.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-ExtraBold.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'),
+      url(./fonts/woff2/Pretendard-Bold.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Bold.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local('Pretendard SemiBold'),
+      url(./fonts/woff2/Pretendard-SemiBold.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-SemiBold.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: local('Pretendard Medium'),
+      url(./fonts/woff2/Pretendard-Medium.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Medium.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Pretendard Regular'),
+      url(./fonts/woff2/Pretendard-Regular.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Regular.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local('Pretendard Light'),
+      url(./fonts/woff2/Pretendard-Light.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Light.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-display: swap;
+    src: local('Pretendard ExtraLight'),
+      url(./fonts/woff2/Pretendard-ExtraLight.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-ExtraLight.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-display: swap;
+    src: local('Pretendard Thin'),
+      url(./fonts/woff2/Pretendard-Thin.woff2) format('woff2'),
+      url(./fonts/woff/Pretendard-Thin.woff) format('woff');
+  }
+
+  /* 사이드바 */
+  @font-face {
+    /* 고령딸기체 */
+    font-family: 'Goryeong Strawberry';
+    src: url(./fonts/GoryeongStrawberry.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 게임 */
+  @font-face {
+    /* 원스토어 모바일POP체 */
+    font-family: 'ONE-Mobile-POP';
+    src: url(./fonts/ONE-Mobile-POP.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 편지 */
+  @font-face {
+    /* 온글잎 류류체 */
+    font-family: 'Ownglyph_ryurue-Rg';
+    src: url(./fonts/Ownglyph_ryurue-Rg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    /* 온글잎 류뚱체 */
+    font-family: 'Ownglyph_ryuttung-Rg';
+    src: url(./fonts/Ownglyph_ryuttung-Rg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 성장일지 */
+  @font-face {
+    /* 온글잎 주리손편지 */
+    font-family: 'Ownglyph_jooreeletter-Rg';
+    src: url(./fonts/Ownglyph_jooreeletter-Rg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 그림일기 */
+  @font-face {
+    /* 어비 쩡체 */
+    font-family: 'UhBeejung';
+    src: url(./fonts/UhBeejung.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*
+ * tailwind가 길어진다면 직접 커스텀해서 사용 가능하다.
+ */
+@layer components {
+  .flexcenter-row {
+    @apply flex justify-center;
+  }
+}

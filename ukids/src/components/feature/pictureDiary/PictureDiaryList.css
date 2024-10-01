@@ -1,0 +1,54 @@
+.paints-container {
+    position: relative;
+    padding-top: 30px; /* 상단 고정 영역만큼의 패딩 */
+}
+
+
+.paints-scrollable {
+    display: grid;
+
+
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 최소 너비를 250px로 증가 */
+    grid-gap: 4000px; /* 칼럼과 행 사이의 간격 */
+
+
+    padding: 0; /* 내부 패딩 */
+    margin: 0 10px; /* 외부 좌우 마진 */
+    
+    max-height: 420px; /* 스크롤 길이 */
+
+
+    overflow-y: auto; /* 세로 스크롤만 활성화 */
+    overflow-x: hidden; 
+
+    width: 99%; /* 100% 하면 스크롤 안보임. 살짝 보이게 */
+
+}
+
+
+.paint-item {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    align-items: center; /* 아이템들을 중앙에 배치 */
+    padding: 20px; /* 아이템 주변 패딩 조절 */
+    background-color: #fff; /* 배경색 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.paint-item:hover {
+    background-color: #f0eded; /* 마우스 호버 시 배경색을 진하게 변경 */
+}
+
+
+.non-diary{
+    width: 650px;
+    height: 400px;
+    position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 140px;
+    text-align: center;
+    line-height: 400px;
+}

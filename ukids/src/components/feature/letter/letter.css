@@ -1,0 +1,39 @@
+.header-font {
+  font-size: 20px;
+  font-weight: 600;
+  color: #999;
+}
+.header-font.selected {
+  font-weight: 900;
+  color: #333;
+}
+
+.letterImg {
+  width: 85px;
+  height: 55.924px;
+}
+
+.letterReadImg {
+  width: 81px;
+  height: 81px;
+}
+
+.textarea-with-lines {
+  background-image: linear-gradient(to bottom, transparent 32px, #999 34px);
+  background-size: 100% 34px;
+  background-repeat: repeat-y;
+  border: 2px solid #999;
+  border-radius: 10px;
+  background-attachment: local; /* 스크롤과 함께 배경 이미지도 스크롤 */
+  line-height: 34px; /* 줄 간격을 배경 이미지와 맞추기 위해 조정 */
+  box-sizing: border-box; /* 패딩을 포함하여 요소의 전체 크기를 유지 */
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 26px;
+  font-family: 'Ownglyph_ryuttung-Rg';
+  resize: none;
+  z-index: -1;
+}
+.textarea-with-lines:focus {
+  outline: none;
+}

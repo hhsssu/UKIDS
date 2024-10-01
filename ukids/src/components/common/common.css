@@ -1,0 +1,375 @@
+/* common.css 공통 컴포넌트들 스타일 */
+@import url(../../reset.css);
+
+.title-style {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.big-title-style {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dash-box {
+  width: 1px;
+  height: 13px;
+  background: #ccc;
+}
+
+.character-tag {
+  display: inline-block;
+  min-width: 1.8rem;
+  min-height: 1rem;
+  padding: 3px 2px;
+  border-radius: 4px;
+  background: #f6aeef;
+  color: var(--Grays-White, #fff);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tag-mom {
+  background: #ffbf33;
+}
+
+.tag-dad {
+  background: #36d5f1;
+}
+
+.tag-daughter {
+  background: #6bc985;
+}
+
+.tag-son {
+  background: #9f6ad5;
+}
+
+.tag-grand-child {
+  background: #767af4;
+}
+
+/* 프로필 */
+.profile-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  gap: 1rem;
+  width: 15.3125rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.625rem;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(153, 153, 153, 0.25);
+  color: #555;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.profile-name {
+  color: #333;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.profile-list {
+  position: absolute;
+  margin-top: 4px;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 250px;
+  min-height: 100px;
+  max-height: 320px;
+  padding: 10px 5px;
+}
+
+.family-list-box {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 180px;
+}
+
+.family-list-box::-webkit-scrollbar {
+  width: 10px;
+}
+.family-list-box::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 5px;
+}
+.family-list-box::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.family-list {
+  display: flex;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.family-create-btn {
+  width: 100%;
+  color: #999;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  padding-top: 15px;
+  text-align: center;
+  border-top: #ddd solid 1px;
+}
+
+/* index.css로 이동 */
+/* 기능 박스 */
+/* .feature-box {
+  width: 56.9375rem;
+  height: 36rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.25);
+} 
+
+.half-feature-box {
+  width: 27.5rem;
+  height: 36rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.25);
+  padding: 30px 15px;
+}*/
+
+/* 사이드바 */
+.sidebar {
+  width: 7.9375rem;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  opacity: var(--sds-size-stroke-border);
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(153, 153, 153, 0.3);
+  align-items: center;
+}
+
+.sidebar-text {
+  color: #777;
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Goryeong Strawberry';
+  font-size: 0.75rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* 일정쪽에서 앨범&그림일기 미리보기 박스 */
+.pre-box {
+  width: 25.625rem;
+  height: 14.86581rem;
+  flex-shrink: 0;
+  background: #fff;
+  border: #ffefcc 3px solid;
+  border-radius: 20px;
+  opacity: var(--sds-size-stroke-border);
+  filter: drop-shadow(0px 0px 7px rgba(153, 153, 153, 0.25));
+}
+
+/* 일정쪽에서 일정 리스트 박스 */
+.half-pre-box {
+  width: 11.875rem;
+  height: 11.875rem;
+  flex-shrink: 0;
+  background: #fff;
+  border: #ffefcc 3px solid;
+  border-radius: 20px;
+  opacity: var(--sds-size-stroke-border);
+  filter: drop-shadow(0px 0px 7px rgba(153, 153, 153, 0.25));
+}
+
+/* 앨범 표시 사진이미지 크기 고정 */
+.image-fixed-size {
+  width: 140px; /* 고정 너비 */
+  height: 125px; /* 고정 높이 */
+  object-fit: cover; /* 이미지 비율 유지하면서 영역 채우기 */
+}
+
+.albums-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
+
+.album-item {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: #dedede4d;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's width and height */
+}
+
+.album-item img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 5px; /* Match the border radius of the container */
+}
+
+.album-item-date {
+  font-size: 11px;
+  font-family: 'IBM Plex Sans KR';
+  font-weight: 600;
+  text-align: center;
+  color: darkgray;
+}
+
+.album-item-text {
+  font-size: 10px;
+  font-family: 'IBM Plex Sans KR';
+  color: darkgray;
+  word-break: break-word;
+  text-align: center;
+}
+
+.fixed-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; /* 다른 요소들 위에 위치하도록 */
+}
+
+.upload-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-form input[type='text'],
+.upload-form .react-datepicker-wrapper,
+.upload-form input[type='file'] {
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.upload-form .common-btn {
+  margin-top: 10px;
+}
+
+.uploaded-photos-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%;
+  padding-top: 10px;
+}
+
+.uploaded-photo {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dedede4d;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.uploaded-photo img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+/* 가족 유대감 나무 관련 */
+.tree-info-box {
+  width: 400px;
+  height: 100px;
+  flex-shrink: 0;
+  z-index: 10;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  align-content: center;
+  color: #555;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0px 4px 5px rgba(142, 142, 142, 0.25);
+  border-radius: 20px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.family-btn:hover,
+.family-btn:focus,
+.family-btn:active {
+  border: 10px solid rgba(54, 213, 241, 0.6);
+}
+
+.setting-box {
+  height: 500px;
+}
+
+.setting-menu-box {
+  padding-top: 0px;
+  border-right: 2px solid #ddd;
+  height: 500px;
+  width: 157px;
+}
+
+.setting-menu-btn {
+  margin: 15px 0 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.setting-menu-btn.active {
+  color: #333 !important;
+}
+
+/* 버튼에 마우스를 올렸을 때 스타일 */
+.setting-menu-btn:hover {
+  color: #555; /* 마우스를 올렸을 때 버튼의 텍스트 색상 */
+}
+
+table th {
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #999;
+}
+
+table td {
+  padding: 10px 0px;
+  /* width: 300px; */
+}
+
+table {
+  margin: 0 auto;
+}

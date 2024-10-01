@@ -1,0 +1,162 @@
+.container {
+  display: flex;      
+  align-items: flex-start;  
+  gap: 10px;           
+}
+
+.image-box{
+  display: flex;
+  margin-top: 30px;
+  
+}
+
+
+/* 사진 등록 박스*/
+.input-file-box{
+
+  position: relative;
+
+  border: 5px solid #ffcce0;
+  text-align: center;
+
+  width: 400px;
+  height: 450px;
+
+
+  flex-shrink: 0;
+  fill: #FFF;
+  stroke-width: 3px;
+  stroke: #FFEFCC;
+  opacity: var(--sds-size-stroke-border);
+  filter: drop-shadow(0px 0px 7px rgba(153, 153, 153, 0.25)); 
+  margin-left: 40px; /* 왼쪽 마진 추가 */
+  border-radius: 15px; /* 테두리를 둥글게 */
+
+
+}
+
+
+/*+글자*/
+.input-file-box span {
+  font-size: 76px; /* 폰트 크기 키우기 */
+  color: #ffcce0; /* 폰트 색상 지정 (오렌지색) */
+  cursor: pointer; /* 마우스 오버 시 커서 변경 */  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* 확실히 이미지 위에 오도록 z-index 설정 */
+
+}
+
+
+/* 이미지미리보기 */
+.input-file-box img {
+  width: 400px; /* 이미지 너비 */
+  height: 439px;
+
+  
+  object-fit: contain; /*비율 유지*/
+}
+
+
+
+
+
+
+
+.title-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+}
+
+#title {
+
+  border: 3px solid  #f3f2f2;
+
+  border: none; /* 테두리 제거 */
+  border-bottom: 3px solid #f3f2f2; /* 하단에만 선 생성 */
+
+  width: 400px;
+  height: 50px;
+
+  
+  margin-left: 20px; /* 왼쪽 마진 추가 */
+
+
+
+
+
+  padding: 10px; 
+  box-sizing: border-box;  
+
+  font-family: 'Ownglyph_ryuttung-Rg', sans-serif;
+  font-size: 36px;  
+  text-align: center;  
+
+   /* 포커스 상태에서 테두리 제거 */
+   &:focus {
+    outline: none;  
+   
+  }
+
+}
+
+textarea.grwoth-input {
+  border: 3px solid  #f3f2f2;
+
+  width: 400px;
+  height: 380px;
+
+
+  margin-left: 20px;  
+  border-radius: 15px; 
+
+  font-family: 'Ownglyph_ryuttung-Rg', sans-serif;  
+
+
+  font-size: 26px; 
+
+  color: #333;  
+
+  overflow-y: auto;
+
+  padding: 15px; 
+
+   
+  &:focus {
+    outline: none;
+   
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 내용을 입력하세요 문구  */
+.input-content::placeholder {
+  color: #aaa; /* 플레이스홀더 텍스트 색상 */
+  font-style: italic; /* 플레이스홀더 텍스트 스타일 */
+}
+
+
+
+/* 클릭시 색상 */
+.input-content:focus {
+  border-color: #d9d8d8; /* 포커스 상태일 때 테두리 색상 변경 */
+  outline: none; /* 기본 브라우저 아웃라인 제거 */
+}
+
+
+
+

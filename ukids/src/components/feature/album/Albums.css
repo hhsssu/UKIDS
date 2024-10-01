@@ -1,0 +1,188 @@
+.feature-box {
+    position: relative;  
+    width: 911px;
+    height: 576px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    background: #fff;
+    overflow-x: hidden;  
+    overflow-y: hidden;  
+
+         /* 스크롤 바 디자인 */
+         ::-webkit-scrollbar {
+            width: 6px;  
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;  
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: darkgrey;  
+            border-radius: 3px;  
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #b0b0b0;  
+        }
+
+  }
+
+
+
+/* 메인글자*/
+.main-label {
+    position: absolute;
+    left: 33px;
+    top: 33px;
+    font-size: 25px;
+    font-family: 'ONE-Mobile-POP';
+    font-weight: 500; /* font-semibold에 해당 */
+    color: #333; /* 짙은 회색 */
+}
+
+/* 시작 문구*/
+.nothing-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-size: 30px;
+    font-family: 'Pretendard', sans-serif;  
+    font-weight: 300;  
+    color: #8e8e8e;  
+    text-align: center;  
+    white-space: nowrap;
+    /* font-family: 'ONE-Mobile-POP';   */
+}
+
+/* 이하 전체*/
+.lists-container {
+
+    flex-wrap: wrap;          /* 여러 줄로 감싸도록 설정 */
+    justify-content: center;  /* 내용  : 중앙 */
+
+    
+    
+    height: 500px;        
+    margin-top: 5px;
+   
+  
+    overflow-y: hidden;         
+    overflow-x: hidden;      
+  
+    width: 100%;              
+    /* border: 2px solid brown;   */
+    margin: 0px 0px 0px 0px;
+
+  }
+  
+
+/* 앨범 목록 영역*/
+.lists-first-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    margin-left: 38px;
+    margin-top: 12px;
+   
+
+    
+
+
+
+
+
+
+    
+    
+    width: 911px;              
+    height: 440px;        
+         
+   
+  
+    overflow-y: hidden;         
+    overflow-x: hidden;      
+  
+    /* border: 2px solid brown;   */
+  }
+  
+
+
+  
+
+/* 각 앨범*/
+.album-one {
+    width: 264px; /* 가로 너비 설정 */
+
+    margin-top: 10px;
+    height: 397px; 
+    
+
+
+
+    
+    align-items: center; /* 아이템들을 중앙에 배치 */
+    padding: 1px;  
+
+    border-radius: 5px; /* 둥근 모서리 */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    border: 2px solid rgb(234, 233, 233);  
+    margin: 9px; 
+}
+
+
+
+/* 이미지*/
+.album-one img {
+    width: 294px; 
+    height: 300px; 
+    object-fit: contain; /*비율 유지*/
+
+    border: 2px solid rgb(177, 177, 177); 
+}
+
+
+/* 날짜*/
+.album-one-date {
+  
+    font-size: 24px; /* 폰트 사이즈 조절 */
+    /* border: 2px solid red; */
+    font-family: 'ONE-Mobile-POP';
+    color: black;
+    text-align: center;
+    padding: 4px;
+    
+}
+
+/* 제목*/
+.album-one-title {
+    
+    font-size: 24px; /* 폰트 사이즈 조절 */
+    font-weight: bold; /* 텍스트를 볼드체로 설정 */
+    font-family: 'ONE-Mobile-POP';
+   
+    /* height: 30px; */
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/* 하단 페이지 박스*/
+.page-box {
+ 
+    height: 50px;        
+    margin-top: 1px;
+  
+  
+    width: 100%;              
+    /* border: 2px solid brown;   */
+    display: flex;
+    justify-content: center; /* 페이지네이션 버튼을 중앙에 위치시킴 */
+    
+    
+}
+
+
+
+
+
+

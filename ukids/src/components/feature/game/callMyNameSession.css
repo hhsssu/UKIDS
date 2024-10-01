@@ -1,0 +1,107 @@
+.session-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.single-subscriber {
+  grid-template-columns: 1fr;
+}
+
+.multiple-subscribers {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.stream-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 비율을 유지 */
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stream-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publisher-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.publisher-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.spotlight {
+  box-shadow: 0 0 10px 5px yellow;
+}
+
+.timer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.answer-section input {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.answer-section button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.answer-section button:hover {
+  background-color: #45a049;
+}
